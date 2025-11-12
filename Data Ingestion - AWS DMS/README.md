@@ -1,14 +1,14 @@
 # AWS Data Migration Service (DMS) Project — MySQL → S3 Data Ingestion
-Overview:
+**Overview:**
 This project demonstrates end-to-end data ingestion and replication using AWS Database Migration Service (DMS) to migrate data from an Amazon RDS MySQL database to an Amazon S3 data lake in Parquet format. It covers the full setup of AWS resources, IAM roles, and replication tasks for real-time Change Data Capture (CDC) and full-load migration.
 
-Architecture:
+**Architecture:**
 Source: Amazon RDS (MySQL)
 Target: Amazon S3 Bucket (Parquet files)
 Migration Tool: AWS DMS
 Supporting Services: IAM | AWS Secrets Manager | CloudWatch
 
-Step-by-Step Implementation:
+**Step-by-Step Implementation:**
 1. Create and Configure RDS Instance
 Launched an RDS MySQL instance with public access enabled. Created a custom DB parameter group and attached it to the instance. Verified connectivity through MySQL Workbench. Created a database retail containing tables: customers, products, orders, etc.
 
@@ -35,7 +35,7 @@ CloudWatch Logs: Tracked migration and CDC status.
 S3 Bucket: Verified data folders (full-load and cdc).
 Validated CDC files via timestamp-based inserts in MySQL source and viewed updated Parquet files in S3.
 
-Results:
+**Results:**
 1. Achieved real-time replication between MySQL and S3.
 2. Data successfully ingested in Parquet format with CDC tracking.
 3. Ensured high data integrity through pre-migration validation and CloudWatch monitoring.
