@@ -1,6 +1,7 @@
 Cross region S3-S3 migration using Lambda
 
 Architecture Diagram:
+<img width="642" height="175" alt="image" src="https://github.com/user-attachments/assets/90cad929-37e9-4cc6-b8b8-fc0264583af8" />
 
 Used AWS S3, SNS, SQS, and Lambda to transfer a data file from an S3 bucket in the source region to an S3 bucket in the target region (your default region). Once the data is loaded into the target region's S3 bucket, SQS is used to send a notification to trigger Glue crawler to generate a table in the Glue catalog. After the table is created in the Glue catalog, leveragd AWS Athena to query the data and analyze its contents.
 
