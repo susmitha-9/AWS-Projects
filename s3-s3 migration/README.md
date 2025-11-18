@@ -13,6 +13,6 @@ Implementation Steps:
 5. Set Up Glue Crawler: Configured and runs the Glue crawler to scan the target S3 bucket, detect the schema, and create a table in the Glue Data Catalog.
 6. Configured S3 Event Notification: Configured an S3 event in the source bucket to publish notifications to the SQS topic whenever a new file is uploaded.
 7. Set Up Athena for Querying: Configured Athena to use the Glue Data Catalog and run SQL queries to analyze the data stored in the target S3 bucket.
-8. Tested the Workflow: Upload a cutomer.csv file to the source S3 bucket, checked if the data is transferred correctly, and ensure that the Glue crawler ran successfully and Athena to query the data.
+8. Tested the Workflow: Upload a cutomer.csv file to the source S3 bucket, checked if the data is transferred correctly, and ensured that the Glue crawler ran successfully and Athena to query the data.
 
 
