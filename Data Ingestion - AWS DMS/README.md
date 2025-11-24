@@ -1,6 +1,6 @@
 # AWS Data Migration Service (DMS) Project — MySQL → S3 Data Ingestion
 **Overview:**
-This project demonstrates end-to-end data ingestion and replication using AWS Database Migration Service (DMS) to migrate data from an Amazon RDS MySQL database to an Amazon S3 data lake in Parquet format. It covers the full setup of AWS resources, IAM roles, and replication tasks for real-time Change Data Capture (CDC) and full-load migration.
+This project demonstrates end-to-end data ingestion and replication using AWS Database Migration Service (DMS) to migrate data from an Amazon RDS MySQL database to an Amazon S3 data lake in Parquet format. It covers the full setup of AWS resources, IAM roles, and replication tasks for real-time Change Data Capture (CDC) and full-load migration. 
 
 **Architecture:**
 Source: Amazon RDS (MySQL)
