@@ -10,7 +10,7 @@ Simulate data generation using Postman to send HTTP POST requests to AWS API Gat
 
 2. Data Processing:
 API Gateway acts as the entry point for the data, validating and routing the incoming requests.
-API Gateway triggers an AWS Lambda function, which processes the data by checking if the format of the data is as expected and forwards it to Amazon Kinesis else write the incorrect data to error bucket
+API Gateway triggers an AWS Lambda function, which processes the data by checking if the format of the data is as expected and forwards it to Amazon Kinesis, else write the incorrect data to error bucket
 
 3. Data Streaming and Storage:
 Amazon Kinesis Data Streams captures the real-time stream of data.
