@@ -9,7 +9,7 @@ Implementation Steps:
 1. Created S3 Buckets: Set up two S3 buckets - one in the source region to hold the data file and one in the target region (default region) for storing the transferred data.
 2. Set Up SNS (Simple Notification Service): Created an SNS topic that is used to notify when a new file is uploaded to the source S3 bucket, which triggers downstream actions.
 3. Created SQS Queue: Set up an SQS queue that receives notifications from SNS and trigger the Lambda function for processing the data file.
-4. Developed Lambda Function: Created a Lambda function that listens to the SQS queue, moves the data file from the source S3 bucket to the target S3 bucket, and sends a notification to trigger the Glue crawler after the transfer.
+4. Developed Lambda Function: Created a Lambda function that listens to the SQS queue, moves the data file from the source S3 bucket to the target S3 bucket, and sends a notification to trigger the Glue crawler after the transfer. 
 5. Set Up Glue Crawler: Configured and runs the Glue crawler to scan the target S3 bucket, detect the schema, and create a table in the Glue Data Catalog.
 6. Configured S3 Event Notification: Configured an S3 event in the source bucket to publish notifications to the SQS topic whenever a new file is uploaded.
 7. Set Up Athena for Querying: Configured Athena to use the Glue Data Catalog and run SQL queries to analyze the data stored in the target S3 bucket.
